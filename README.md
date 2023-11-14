@@ -1,2 +1,7 @@
-# portfolio
-Portfolio website done via HTMX
+# README
+Portfolio website
+
+# Stack
+- HTMX
+- Golang
+- labstack/echo http router
