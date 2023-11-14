@@ -22,16 +22,9 @@ func main() {
 	templates.NewTemplateRenderer(e, "public/*.html")
 
 	// routes
-
-	e.GET("/htmx-src", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "index", nil)
-	})
-
 	e.GET("/hello", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", nil)
 	})
-
-
 
 	e.GET("/test", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "test", nil)
