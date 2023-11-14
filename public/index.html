@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, World!</title>
+    <script src="/assets/htmx.min.js"></script>
+
 </head>
 <body>
     <p>Hello, World!</p>
-    <p>Greetings, {{.Name}}!</p>
+    <div id="user-info">
+      <p>{{.Name}}</p>
+      <button hx-get="/get-info" hx-target="#user-info" hx-swap="innerHTML">Reveal Info</button>
+    </div>
 </body>
 </html>
 {{end}}
