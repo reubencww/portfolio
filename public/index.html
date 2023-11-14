@@ -1,19 +1,32 @@
 {{define "index"}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello, World!</title>
     <script src="/assets/htmx.min.js"></script>
-
-</head>
-<body>
+    <style>
+      @font-face {
+        font-family: "Switzer-Variable";
+        src: url("/assets/fonts/Switzer-Variable.woff2") format("woff2"),
+          url("/assets/fonts/Switzer-Regular.woff") format("woff"),
+          url("/assets/fonts/Switzer-Variable.ttf") format("truetype");
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: normal;
+      }
+      body {
+        font-family: "Switzer-Variable";
+      }
+    </style>
+  </head>
+  <body>
     <p>Hello, World!</p>
     <div id="user-info">
       <p>{{.Name}}</p>
       <button hx-get="/get-info" hx-target="#user-info" hx-swap="innerHTML">Reveal Info</button>
     </div>
-</body>
+  </body>
 </html>
 {{end}}
