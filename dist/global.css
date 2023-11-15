@@ -9,6 +9,8 @@
 }
 
 body {
+  background-color: #1c1c1c;
+  color: #e5e5e5;
   font-family: "Switzer-Variable";
   margin: 40px auto;
   max-width: 650px;

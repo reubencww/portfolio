@@ -36,7 +36,7 @@ func main() {
 		return c.Render(http.StatusOK, "test", nil)
 	})
 
-	e.POST("/redirects", func(c echo.Context) error {
+	e.GET("/redirects", func(c echo.Context) error {
 		c.Response().Header().Set("HX-Redirect", "/test")
 		return c.NoContent(http.StatusOK)
 
