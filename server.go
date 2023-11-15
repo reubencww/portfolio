@@ -17,6 +17,7 @@ func main() {
 
 	// Static files
 	e.Static("/assets", "assets")
+	e.Static("/dist", "dist")
 
 	// init template renderer
 	templates.NewTemplateRenderer(e, "public/*.html")

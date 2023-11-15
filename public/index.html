@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="/dist/tailwind.css">
     
     <style>
       @font-face {
@@ -31,7 +32,7 @@
   </head>
   <body>
     <p>Hello, World!</p>
-    <div id="user-info">
+    <div id="user-info" class="bg-red-100 p-4 rounded-xl">
       <p>{{.Name}}</p>
       <button hx-get="/get-info" hx-target="#user-info" hx-swap="innerHTML">Reveal Info</button>
     </div>
