@@ -23,12 +23,22 @@ func main() {
 	templates.NewTemplateRenderer(e, "public/*.html")
 
 	// routes
-	e.GET("/hello", func(c echo.Context) error {
+	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", nil)
+	})
+
+	e.GET("/hello", func(c echo.Context) error {
+		return c.Render(http.StatusOK, "hello", nil)
 	})
 
 	e.GET("/test", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "test", nil)
+	})
+
+	e.POST("/redirects", func(c echo.Context) error {
+		c.Response().Header().Set("HX-Redirect", "/test")
+		return c.NoContent(http.StatusOK)
+
 	})
 
 	e.GET("/get-info", func(c echo.Context) error {
