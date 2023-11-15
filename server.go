@@ -27,6 +27,7 @@ func main() {
 		return c.Render(http.StatusOK, "index", nil)
 	})
 
+	// routes to be deleted
 	e.GET("/hello", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "hello", nil)
 	})
