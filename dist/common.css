@@ -1,0 +1,9 @@
+.global-padding {
+  padding-bottom: 28px;
+}
+
+.custom-underline {
+  border-bottom: 1px solid #A0A0A0;
+  padding-bottom: 0.5px;
+  display: inline-block;
+}
