@@ -79,15 +79,24 @@ body {
   color: #787878;
 }
 
+.card-subheader {
+  color: #787878;
+  font-size: 15px;
+}
+
 .card-content {
   font-size: 15px;
 }
 
 .card-date {
-  font-size: 15px;
+  font-size: 14px;
   color: #787878;
 }
 
 .badge-group {
   margin-top: 14px;
+}
+
+.badge-item {
+  background-color: #484848;
 }
