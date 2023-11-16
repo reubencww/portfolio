@@ -29,6 +29,15 @@ body {
   background-color: #1c1c1c;
   color: #e5e5e5;
   font-family: "Switzer-Light";
+  max-width: 650px;
+  line-height: 1.6em;
+  margin: 0 auto;
+}
+
+.main-body {
+  background-color: #1c1c1c;
+  color: #e5e5e5;
+  font-family: "Switzer-Light";
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6em;
@@ -99,4 +108,12 @@ body {
 
 .badge-item {
   background-color: #484848;
+}
+
+.footer-mt {
+  margin-top: 88px;
+}
+
+.footer-text {
+  color: #787878;
 }

@@ -17,14 +17,20 @@
     <link rel="stylesheet" href="/dist/css/tailwind.css" />
   </head>
   <body>
-    {{template "intro_deck" .}}
-    {{template "experience"}}
-    
+    <div class="main-body">
+      {{template "intro_deck" .}}
+      {{template "experience"}}
+      {{template "projects"}}
+    </div>
+    {{template "footer"}}
     <script>
       htmx.onLoad(function () {
         initFlowbite();
       });
     </script>
   </body>
+  <footer>
+    
+  </footer>
 </html>
 {{end}}

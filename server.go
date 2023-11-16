@@ -27,29 +27,11 @@ func main() {
 		return c.Render(http.StatusOK, "index", nil)
 	})
 
-	// routes to be deleted
-	e.GET("/hello", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "hello", nil)
-	})
-
-	e.GET("/test", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "test", nil)
-	})
-
-	e.GET("/redirects", func(c echo.Context) error {
-		c.Response().Header().Set("HX-Redirect", "/test")
-		return c.NoContent(http.StatusOK)
-
-	})
-
-	e.GET("/get-info", func(c echo.Context) error {
-		res := map[string]interface{}{
-			"Name": "Reuben",
-			"Github": "github.com/reubencww",
-			"Email": "reubenchongww2512@gmail.com",
-		}
-		return c.Render(http.StatusOK, "name_card", res)
-	})
+	// To use when have blogs
+	// e.GET("/redirects", func(c echo.Context) error {
+	// 	c.Response().Header().Set("HX-Redirect", "/test")
+	// 	return c.NoContent(http.StatusOK)
+	// })
 
 	e.Logger.Fatal(e.Start(":1323"))
 }
