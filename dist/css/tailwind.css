@@ -1732,6 +1732,7 @@ body {
 }
 
 .footer-mt {
+  bottom: 0;
   margin-top: 88px;
 }
 
@@ -1741,8 +1742,8 @@ body {
 
 .project-card {
   position: relative;
-  height: 280px;
-  padding: 20px;
+  height: 250px;
+  padding: 5px;
 }
 
 .arrow {
@@ -1753,7 +1754,7 @@ body {
 .badge-group-project {
   position: absolute;
   bottom: 0;
-  margin-top: 14px;
+  margin-bottom: 28px;
 }
 
 .project-tooltip {

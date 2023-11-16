@@ -26,11 +26,13 @@
     />
   </head>
   <body>
+
     <div class="main-body">
       {{template "intro_deck" .}} 
       {{template "experience"}} 
       {{template "projects"}}
     </div>
+    
     {{template "footer"}}
     <script>
       htmx.onLoad(function () {
@@ -38,6 +40,5 @@
       })
     </script>
   </body>
-  <footer></footer>
 </html>
 {{end}}
