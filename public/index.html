@@ -15,22 +15,24 @@
     <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="/dist/css/flowbite.min.css" />
     <link rel="stylesheet" href="/dist/css/tailwind.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-....."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="main-body">
-      {{template "intro_deck" .}}
-      {{template "experience"}}
-      {{template "projects"}}
-    </div>
+    <div class="main-body">{{template "intro_deck" .}} {{template "experience"}} {{template "projects"}}</div>
     {{template "footer"}}
     <script>
       htmx.onLoad(function () {
-        initFlowbite();
-      });
+        initFlowbite()
+      })
     </script>
   </body>
-  <footer>
-    
-  </footer>
+  <footer></footer>
 </html>
 {{end}}
