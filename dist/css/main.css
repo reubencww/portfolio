@@ -82,3 +82,12 @@ body {
 .card-content {
   font-size: 15px;
 }
+
+.card-date {
+  font-size: 15px;
+  color: #787878;
+}
+
+.badge-group {
+  margin-top: 14px;
+}

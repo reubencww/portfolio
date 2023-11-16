@@ -1,13 +1,36 @@
 {{define "experience"}}
 <div class="new-section">
   <h1 class="section-header">Experience</h1>
-  <!-- add scrollable container here -->
   <div>
-    <!-- add grid, left side for timeline -->
-    <div class="max-w custom-card rounded-lg">
-      <p class="card-header">FullStack Software Engineer · ReferralCandy</p>
-      <p class="card-content">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+    <div>
+      <a href="https://referralcandy.com" target="_blank">
+        <div class="max-w custom-card rounded-lg">
+          <!-- The columns here -->
+          <div class="grid grid-cols-4 gap-2">
+            <div class="col-span-1">
+              <p class="card-date">Jan — Dec 2023</p>
+            </div>
+            <div class="col-span-3">
+              <p class="card-header">FullStack Software Engineer · ReferralCandy</p>
+              <p class="card-content">
+                Deliver high-quality, robust production code for a diverse array of projects for ReferralCandy's
+                customers <i>(~100k different merchants and >100m users)</i>. Worked on ReferralCorner, FOLP and
+                campaign states which are part of ReferralCandy's core software product. Enhanced and imlemented
+                internal tooling software <i>Wonka</i> to facilitate day to day operations for customer support
+                engineers.
+              </p>
+              <!-- badges here -->
+              <div class="badge-group">
+                <span
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >Default</span
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
- </div>
+</div>
 {{end}}
