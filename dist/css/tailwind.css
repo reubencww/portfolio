@@ -1205,6 +1205,10 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1247,6 +1251,11 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1269,6 +1278,10 @@ input:checked + .toggle-bg {
 
 .resize {
   resize: both;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -1664,7 +1677,7 @@ body {
 }
 
 .custom-card:hover::before {
-  border-top: 1px solid rgba(133, 133, 133, 0.2);
+  border-top: 1px solid rgba(133, 133, 133, 0.1);
   background-color: rgba(72,72,72, 0.1);
 }
 
@@ -1704,6 +1717,23 @@ body {
 
 .footer-text {
   color: #787878;
+}
+
+.project-card {
+  position: relative;
+  height: 250px;
+  padding: 20px;
+}
+
+.arrow {
+  margin-left: 4px;
+  color: #787878;
+}
+
+.badge-group-project {
+  position: absolute;
+  bottom: 0;
+  margin-top: 14px;
 }
 
 .hover\:border-gray-300:hover {

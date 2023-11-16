@@ -120,3 +120,20 @@ body {
 .footer-text {
   color: #787878;
 }
+
+.project-card {
+  position: relative;
+  height: 250px;
+  padding: 20px;
+}
+
+.arrow {
+  margin-left: 4px;
+  color: #787878;
+}
+
+.badge-group-project {
+  position: absolute;
+  bottom: 0;
+  margin-top: 14px;
+}
