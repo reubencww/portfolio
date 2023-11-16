@@ -46,3 +46,39 @@ body {
 .section-header {
   color: #787878;
 }
+
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Add this to create the overlay */
+.custom-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); 
+  z-index: -1;
+  transition: background-color 0.2s ease; 
+}
+
+.custom-card:hover::before {
+  background-color: rgba(72,72,72, 0.1); 
+}
+
+.custom-card:hover .card-header {
+  color: #e5e5e5;
+}
+
+.card-header {
+  color: #787878;
+}
+
+.card-content {
+  font-size: 15px;
+}
