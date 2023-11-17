@@ -147,3 +147,9 @@ body {
 .watch-demo {
   color: #787878;
 }
+
+@media (max-width: 768px) {
+  .badge-group-project {
+    display: none;
+  }
+}

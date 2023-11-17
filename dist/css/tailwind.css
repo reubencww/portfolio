@@ -1762,6 +1762,16 @@ body {
   color: rgba(229, 229, 229, 0.7);
 }
 
+.watch-demo {
+  color: #787878;
+}
+
+@media (max-width: 768px) {
+  .badge-group-project {
+    display: none;
+  }
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
