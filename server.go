@@ -2,13 +2,20 @@ package main
 
 import (
 	"net/http"
+	"os"
 	"portfolio/templates"
 
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
 
 func main() {
+	err := godotenv.Load(".env")
+	if err != nil {
+		panic("Error loading .env file")
+	}
+
 	e := echo.New()
 
 	// Middleware
@@ -24,7 +31,14 @@ func main() {
 
 	// routes
 	e.GET("/", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "index", nil)
+		gaID := os.Getenv("GA_ID")
+		data := struct {
+			GAID string
+		}{
+			GAID: gaID,
+		}
+
+		return c.Render(http.StatusOK, "index", data)
 	})
 
 	// To use when have blogs
